@@ -1,41 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-
-        <style>
-            p{
-                color: red;
-
-            }
-
-            #para-1{
-
-                color:blue;
-            }
-
-            .para{
-
-                color:green;
-            }
-
-            .para2{
-
-                front: size 12px;;
-            }
-            
-            
-        </style>
+        <meta name="description" content="My first website">
+        <meta name="keywords" content="INFO1601, uwi, web">
+        <title>My First Page</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <p>This my first website</p><br>
-        <p class="para para2" title="my paragraph">Welcome</p>
+        <style>
+            h1{
+                color:blue;
+                font-size: 35px;
+            }
 
-        <p .This is some words </p>
-        <p id="para-1" id="para-2"> Some more words </p>
-        <p class="para">Some</p>
+            h2{
+                color:red;
+                font-size: 25px;
+            }
 
-        <img src="Jpeg.avif"></img>
+            figcaption{
+                color:rgb(76, 224, 8);
+                font-size: 18px;
+            }
+        </style>
+        <header>
+            <h1>This is my first website</h1>
+        </header>
 
+        <article>
+            <section>
+                <h2>Welcome</h2>
+            </section>
 
+           <section>
+                <figure>
+                    <img src="Jpeg.avif" alt="a random dog">
+                    <figcaption>Fig 1. A random dog</figcaption>
+                </figure>
+           </section>
+
+           <section>
+               <details>
+                   <summary>Hobbies</summary>
+                   <ul>
+                    <li>Chess</li>
+                    <li>Guitar</li>
+                    <li>Coding</li>
+                    <li>Playing Games</li>
+                </ul>
+               </details>
+            </section>
+
+            <dialog id="mydialog">
+                I dont know what to put in the dialog
+                <a href="javascript:mydialog.removeAttribute('open')">close</a>
+            </dialog>
+
+            <a href="javascript:document.querySelector('#mydialog').setAttribute('open', true)">
+                Open Dialog
+            </a>
+
+        </article>
+           
     </body>
-</html>
+<html>
